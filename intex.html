@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy Birthday Shreya ❤️</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body, html {
+    width: 100%; height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #fffdf8;
+  }
+  .slide {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  .slide.active {
+    display: flex;
+  }
+  #slide1 { background: #fffaf0; color: #333; }
+  #slide2 { background: #ffe4e1; color: #000; }
+  #slide3 { background: #ffe0f0; color: black; }
+  #slide4 { background: #f0f8ff; color: black; }
+  #slide5 { background: #e0f7fa; color: #333; overflow: hidden; }.candle { width: 40px; height: 110px; background: #ffc107; border-radius: 10px; margin: 20px auto; box-shadow: inset 0 0 15px #ffecb3; position: relative; } .flame { position: absolute; top: -50px; left: 50%; transform: translateX(-50%); width: 30px; height: 45px; background: radial-gradient(ellipse at center, #ffeb3b 0%, #ff9800 50%, #f44336 90%); border-radius: 50%; filter: drop-shadow(0 0 10px orange) drop-shadow(0 0 20px yellow); animation: flicker 0.35s infinite alternate; box-shadow: 0 0 20px 5px rgba(255,165,0,0.7), 0 0 35px 12px rgba(255,140,0,0.5); z-index: 10; } @keyframes flicker { 0% { transform: translateX(-50%) scale(1); filter: drop-shadow(0 0 10px orange); opacity: 1; } 50% { transform: translateX(calc(-50% + 2px)) scale(1.15); filter: drop-shadow(0 0 25px yellow); opacity: 0.9; } 100% { transform: translateX(-50%) scale(1); filter: drop-shadow(0 0 10px orange); opacity: 1; } }
+
+h1 { font-size: 2.8rem; margin-top: 20px; }
+
+.zoom-emoji { font-size: 5rem; animation: zoom 2s infinite alternate; cursor: pointer; user-select: none; } @keyframes zoom { 0% { transform: scale(1); } 100% { transform: scale(1.3); } } #slide2 p { margin-top: 10px; font-size: 1.2rem; }
+
+.arrow { font-size: 2.5rem; margin-top: 30px; cursor: pointer; user-select: none; }
+
+#slide3 p { font-size: 1.3rem; line-height: 1.5; }
+
+#slide4 h2 { font-size: 2rem; }
+
+.balloon { width: 60px; height: 80px; border-radius: 50% / 60% 60% 40% 40%; margin: 10px; position: relative; animation: floatUp linear infinite; box-shadow: inset -5px -10px 10px rgba(255,255,255,0.4); } .balloon::after { content: ''; width: 3px; height: 40px; background: #555; position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); z-index: 10; box-shadow: 0 0 2px #888; } .ribbon-bow { position: absolute; bottom: -52px; left: 50%; transform: translateX(-50%); width: 22px; height: 14px; z-index: 11; } .ribbon-bow .loop { position: absolute; width: 10px; height: 14px; background: #555; border-radius: 50%; top: 0; } .ribbon-bow .left { left: 0; transform: rotate(-30deg); clip-path: ellipse(40% 70% at 50% 50%); } .ribbon-bow .right { right: 0; transform: rotate(30deg); clip-path: ellipse(40% 70% at 50% 50%); } .ribbon-bow .center { position: absolute; width: 6px; height: 8px; background: #555; border-radius: 50%; top: 3px; left: 50%; transform: translateX(-50%); box-shadow: 0 0 3px #999; }
+
+@keyframes floatUp { 0% { transform: translateY(0); } 100% { transform: translateY(-120vh); } }
+
+#slide5 .balloon-container { display: flex; flex-wrap: wrap; justify-content: center; width: 100%; position: relative; z-index: 10; padding-bottom: 100px; }
+
+#slide5 h1 { position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); z-index: 20; font-size: 2.8rem; color: #333; text-shadow: 0 0 10px #fff, 0 0 20px #ffc0cb, 0 0 30px #ffc0cb; }
+
+canvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 5; } </style>
+
+</head>
+<body>
+<!-- Body content continues with script and slide markup... -->
+</body>
+</html>
